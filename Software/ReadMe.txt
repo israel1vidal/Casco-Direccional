@@ -151,21 +151,20 @@ void calculo() {
   if (ang_x < ang_y) {
     toma = 1;
   }
-  if (ang_x - 65) < ang_y) {
+  if ((ang_x - 65) < ang_y) {
     toma2 = 1;
   }
 }
 
 void muestreo1() {
   calculo();
-  intensidad()
+  intensidad();
   if (estado == 'A') {
     while (x > ang_y) {
       while (x > ang_y) {
         calculo();
-        intensidad()
+        intensidad();
       }
-      cont2 = 0;
       if (toma == 0) {
         estado = 'B';
       } else {
@@ -186,7 +185,7 @@ void muestreo2() {
     while (ang_x > x2 && ang_y > y) {
       while (ang_x > x2 && ang_y > y) {
         calculo();
-        intensidad()
+        intensidad();
       }
       if (toma2 == 1) {
         estado = 'C';
@@ -204,9 +203,8 @@ void interrupcion() {
       while (x > ang_y)estado = 'A';
       GiroDerecha();
       calculo();
-      intensidad()
+      intensidad();
     }
-    cont2 = 0;
     if (toma == 0) {
       estado = 'A';
     } else {
@@ -223,7 +221,7 @@ void interrupcion() {
       while (ang_x > x2 && ang_y > y) {
         calculo();
         GiroIzquierda();
-        intensidad()
+        intensidad();
       }
       if (toma2 == 1) {
         estado = 'A';
